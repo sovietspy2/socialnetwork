@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
 
-    @GetMapping
+    @GetMapping("/test")
     public String greeting(@RequestParam(required = false, defaultValue = "Penis") String name) {
         return " hey there "+name+"!";
     }
